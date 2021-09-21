@@ -1,30 +1,46 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <header>
+    <!-- Navbar -->
+    <MDBNavbar expand="lg" light bg="white" container>
+      <MDBNavbarToggler target="#navbarExample01"></MDBNavbarToggler>
+      <MDBNavbarNav collapse="navbarExample01" class="mb-2 mb-lg-0">
+        <MDBNavbarItem :to="{ name: 'About' }">
+          Know Us
+        </MDBNavbarItem>
+        <MDBNavbarItem :to="{ name: 'Services' }">
+          Services
+        </MDBNavbarItem>
+        <MDBNavbarItem :to="{ name: 'Blog' }">
+          Blog
+        </MDBNavbarItem>
+        <MDBNavbarItem :to="{ name: 'Contact' }">
+          Prayers & Testimonies
+        </MDBNavbarItem>
+        <MDBNavbarItem :to="{ name: 'Live' }">
+          Live Stream
+        </MDBNavbarItem>
+      </MDBNavbarNav>
+    </MDBNavbar>
+    <!-- Navbar -->
+  </header>
   <router-view/>
 </template>
 
+<script>
+  import { MDBNavbar, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem } from 'mdb-vue-ui-kit';
+
+  export default {
+    components: {
+      MDBNavbar,
+      MDBNavbarToggler,
+      MDBNavbarNav,
+      MDBNavbarItem
+    },
+  };
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  #app {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 </style>
