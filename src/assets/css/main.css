@@ -1,3 +1,23 @@
+/*
+--------------------------------------------
+------------MOBILE FIRST DESIGN-------------
+--------------------------------------------
+*/
+
+body {
+    color: #000000;
+}
+
+[class *="col-"]{
+width: 100%;
+}
+
+/*
+--------------------------------------------
+---------------NAVBAR STYLES----------------
+--------------------------------------------
+*/
+
 #navbar {
     background-color: #000000;
     color: #ffffff;
@@ -52,6 +72,11 @@ display: none;
 transition: 0.6s;
 }
 
+/*
+--------------------------------------------
+-------------DROPDOWN STYLES----------------
+--------------------------------------------
+*/
 .dropdown-content {
     display: block;
     position: absolute;
@@ -72,6 +97,12 @@ padding: 0.8em 5em 0.8em 1em;
 background-color: #dbdbdb;
 }
 
+
+/*
+--------------------------------------------
+---------------iTYPED STYLES----------------
+--------------------------------------------
+*/
 .ityped-cursor {
     font-size: 2.2rem;
     opacity: 1;
@@ -102,15 +133,129 @@ background-color: #dbdbdb;
 .header {
     color: #000000;
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
+    border-radius: 14px;
+    align-content: center;
     background-color: #f4f4f4;
 }
 
-[class *="col-"]{
-width: 100%;
+.welcome {
+    align-self: center;
 }
 
-/* Tablet View*/
+.welcome-text {
+    display: none;
+}
+
+.welcome-image
+
+.auto-type {
+    display: none;
+}
+
+.service-days-header {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*
+--------------------------------------------
+----------------SERVICE CARD----------------
+--------------------------------------------
+*/
+
+.service-card {
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    margin-left: 50px;
+    width: 326px;
+    height: 496px;
+    align-content: center;
+}
+
+.service-card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.service-time {
+    float: right;
+    background-color: #d60808;
+    color: #ffffff;
+    padding: 5px 20px 5px 20px;
+}
+
+.dot {
+    background-color: #873b72;
+    width: 15px;
+    height: 11px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.service-type {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-indent: 10px;
+}
+
+.service-phrase {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.service-host-logo {
+    border-radius: 50px;
+    padding: 10px;
+    width:  98px;
+    height: 76px;
+    margin-bottom: 2px;
+}
+
+.service-card-div {
+    width: 85%;
+    height: 1px;
+    background-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.service-interact {
+    width: 100%;
+    display: table;
+}
+
+.service-attend {
+    width: 41px;
+    height: 41px;
+    margin-left: 30px;
+}
+
+.service-inquire {
+    width: 41px;
+    height: 41px;
+    float: right;
+    margin-right: 40px;
+}
+
+
+/*
+--------------------------------------------
+----------------TABLET VIEW-----------------
+--------------------------------------------
+*/
 @media only screen and (min-width: 48em){
 .col-md-1 {width: 8.33%;}
 .col-md-2 {width: 16.66%;}
@@ -134,10 +279,31 @@ width: 100%;
     display: none;
 }
 
+.auto-type {
+    align-self: center;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.welcome-text {
+    display: block;
+    font-weight: bold;
+    font-size: 48px;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+}
+
 }
 
 
-/* Desktop View*/
+/*
+--------------------------------------------
+---------------DESKTOP VIEW-----------------
+--------------------------------------------
+*/
 @media only screen and (min-width: 62em){
 .col-lg-1 {width: 8.33%;}
 .col-lg-2 {width: 16.66%;}
@@ -154,6 +320,22 @@ width: 100%;
 
 .sidebar{
     display: none;
+}
+
+.auto-type {
+    align-self: center;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.welcome-text {
+    display: block;
+    font-weight: bold;
+    font-size: 48px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
 
 }

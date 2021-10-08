@@ -62,7 +62,7 @@
           <!--Grid column-->
           <MDBCol auto class="mb-4 mb-md-0 col-lg-3">
             <!-- Submit button -->
-            <MDBBtn color="primary" type="submit" class="mb-4">
+            <MDBBtn color="warning" type="submit" class="mb-4">
               Subscribe
             </MDBBtn>
           </MDBCol>
@@ -74,9 +74,9 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3 text-light" style="background-color: #000;">
       © {{ copydate }} Copyright:
-      <a class="text-dark" href="#">{{ churchName }}</a>
+      <a class="text-light" href="#">{{ churchName }}</a>
     </div>
     <!-- Copyright -->
   </MDBFooter>
