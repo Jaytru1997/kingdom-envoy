@@ -1,7 +1,7 @@
 <template>
 	<div class="mx-lg-5 fluid mb-3">
     <MDBContainer>
-      <h3 class="service-days-header mb-4 mt-4">SERVICE DAYS</h3>
+      <h3 class="headers mb-4 mt-4">SERVICE DAYS</h3>
 
       <MDBRow>
       	<!-- Empowerment Service -->

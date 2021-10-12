@@ -18,6 +18,10 @@
   <!-- Service Days Section -->
   <Service />
   <!-- Service Days Section Ends -->
+
+  <!--Ministry Section-->
+  <Ministry />
+  <!--Ministry Section Ends-->
   
 </template>
 
@@ -25,6 +29,7 @@
 import { MDBContainer, MDBRow, MDBCol } from 'mdb-vue-ui-kit'
 import { init } from 'ityped'
 import Service from '../components/Service.vue'
+import Ministry from '../components/Ministry.vue'
 
 export default {
   name: 'Home',
@@ -32,7 +37,8 @@ export default {
     MDBContainer,
     MDBRow,
     MDBCol,
-    Service
+    Service,
+    Ministry
   },
   mounted() {
     const autoType = document.querySelector('.auto-type')
