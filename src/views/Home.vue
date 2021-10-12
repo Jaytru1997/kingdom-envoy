@@ -5,12 +5,10 @@
       <MDBRow>  
         <MDBCol col="6" md="6" sm="12" class="welcome">
           <h1 class="text-center mb-3 welcome-text">WELCOME!</h1>
-          <MDBCol col="12" md="12" sm="12" class="auto-type">
-            
-          </MDBCol>
+          <MDBCol col="12" md="12" sm="12" class="auto-type"></MDBCol>
         </MDBCol>
         <MDBCol col="6" md="6" sm="12">
-          <img src="../assets/images/ptrial.png" height="500" class="welcome-image">
+          <img src="../assets/images/ptrial.png" class="welcome-image">
         </MDBCol>
       </MDBRow>
     </MDBContainer>
