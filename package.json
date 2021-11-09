@@ -2,6 +2,7 @@
   "name": "keynigeria",
   "version": "0.0.1",
   "description": "Kingdom Envoy official website",
+  "icon": "./src/assets/icons/keyicon.png",
   "productName": "keywebsite",
   "author": "Oghenekparobo Onosemuode <kparaboj@gmail.com>",
   "private": true,
