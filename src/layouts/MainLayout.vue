@@ -1,6 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-layout view="lHh lpr lFf" container style="height: 400px" class="shadow-2 rounded-borders">
+      <!--Header-->
       <q-header elevated class="">
         <q-toolbar class="bg-dark text-white">
           <q-avatar>
@@ -23,17 +24,15 @@
 
 
       <!--Footer-->
-
       <q-footer reveal elevated class="bg-dark q-py-lg text-white">
         <div class="row">
-          <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12 text-center">
-            <q-toolbar>
-              <q-toolbar-title>KINGDOM ENVOY</q-toolbar-title>
-            </q-toolbar>
+          <div class="col-xl-4 col-lg-4 col-sm-12 col-md-4 col-xs-12 q-px-sm footer-address">
+            <h5 class="q-my-none text-weight-bolder">KINGDOM ENVOY</h5>
+            <p class="text-grey-6 text-italic">The Spirit Center, Jesus Street, Off Street Opp. Sokaje Hotel, Ekredjebor, Ughelli, Delta State, Nigeria, 333105</p>
           </div>
 
       <!--Email Newsletter-->
-          <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12 q-px-sm">
+          <div class="col-xl-4 col-lg-4 col-sm-12 col-md-4 col-xs-12 q-px-sm">
             <q-input dark rounded filled bottom-slots v-model="text" label="Subscribe to our newsletter" counter maxlength="30" :dense="dense">
               <template v-slot:before>
                 <q-avatar>
@@ -51,7 +50,7 @@
               </template>
             </q-input>
           </div>
-          <div class="col-xl-4 col-lg-4 col-sm-12 col-xs-12 text-center q-my-md text-grey-6">
+          <div class="col-xl-4 col-lg-4 col-sm-12 col-md-4 col-xs-12 text-center q-my-md text-grey-6">
             Copyright &copy; {{copyright}} {{orgName}}.
           </div>
         </div>

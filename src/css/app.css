@@ -287,6 +287,10 @@ width: 100%;
     .menu-icon {
         margin-left: 75%;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
 
 /* Smartphones (small devices) ----------- */
@@ -299,6 +303,10 @@ width: 100%;
     .menu-icon {
         margin-left: 75%;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -309,6 +317,10 @@ width: 100%;
     
     .menu-icon {
         margin-left: 75%;
+    }
+
+    .footer-address {
+        text-align: center;
     }
 }
 
@@ -322,6 +334,10 @@ width: 100%;
     .menu-icon {
         margin-left: 80%;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
     
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
@@ -333,10 +349,14 @@ width: 100%;
     .menu-icon {
         margin-left: 80%;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
 
 /* Smartphones (medium devices) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : landscape) {
 /* Styles */
     
     .menu-tabs {
@@ -346,9 +366,13 @@ width: 100%;
     .menu-icon {
         display: none;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
 /* Styles */
     .menu-tabs {
         display: block;
@@ -357,11 +381,15 @@ width: 100%;
     .menu-icon {
         display: none;
     }
+
+    .footer-address {
+        text-align: center;
+    }
 }
 
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1025px) {
+@media only screen  and (min-width : 1024px) {
 /* Styles */
     .menu-icon {
         display: none;
