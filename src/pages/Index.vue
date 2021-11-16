@@ -1,6 +1,6 @@
 <template>
     <!--Carousel-->
-    <div class="">
+    <div class="mobile-slide">
       <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.png">
           <div class="absolute-center custom-caption text-center text-white">
@@ -16,6 +16,9 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
+
+    <!--Desktop Replacement For Carousel-->
+    
 
     <!--Service Days-->
     <div class="row">
@@ -47,7 +50,7 @@
 
           <q-card-actions>
             <q-btn flat round><img src="../assets/icons/keyicon.png" width="48" height="48"></q-btn>
-            <a :href="fblink" target="_blank"><q-btn flat color="primary">Join Facebook Live</q-btn></a>
+            <a :href="fblink" target="_blank" class="fb"><q-btn flat color="primary">Join Facebook Live</q-btn></a>
           </q-card-actions>
         </q-card>
       </div>
@@ -64,7 +67,7 @@ export default defineComponent({
     return {
       slide: ref(1),
       stars: 5,
-      fblink: "#",
+      fblink: "",
       map: "https://www.google.com/search?q=kingdom+envoy&rlz=1C1CHWL_enNG976NG976&oq=king&aqs=chrome.1.69i57j35i39j46i512j0i433i512l2j0i512j69i60l2.3976j0j7&sourceid=chrome&ie=UTF-8#",
       services: [
         {
@@ -84,6 +87,16 @@ export default defineComponent({
         }
       ]
     };
+  },
+  mounted () {
+
+    //facebook live stream link fecthed from backend
+    const fblink = fetch('http://localhost:1337/facebook-live')
+      .then(response => response.json())
+      .then(data => {
+        this.fblink = data.Link;
+      })
+      .catch(err => console.log(err.message));
   }
 });
 </script>
