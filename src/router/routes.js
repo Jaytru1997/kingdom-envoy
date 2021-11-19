@@ -17,6 +17,9 @@ const routes = [
         path: '/blogs', component: () => import('pages/Blog.vue') 
       },
       { 
+        path: '/gallery', component: () => import('pages/Gallery.vue') 
+      },
+      { 
         path: '/contact', component: () => import('pages/Contact.vue') 
       },
       { 

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "Likes",
+  "info": {
+    "name": "likes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "unique": true,
+      "private": true,
+      "model": "gallery"
+    },
+    "likes": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 0
+    }
+  }
+}

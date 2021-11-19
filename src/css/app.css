@@ -105,10 +105,6 @@ body {
     filter: brightness(0.5);
 }
 
-.card-img {
-    filter: brightness(0.5);
-}
-
 .header {
     color: #000000;
     font-weight: bold;

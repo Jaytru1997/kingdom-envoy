@@ -22,6 +22,8 @@
 
     <!--Service Days-->
     <div class="row">
+      <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12  text-center text-h4 text-uppercase q-my-lg text-weight-bolder">Explore Our Service Days</div>
+      <q-separator></q-separator>
       <div v-for="service in services" :key="service.type" class="q-px-md q-py-md col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
         <q-card class="my-card">
           <q-img :src="service.img" class="card-img"/>
@@ -32,7 +34,7 @@
               <div class="col text-h6 ellipsis">
                 {{service.type}}
               </div>
-              <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">Location</div>
+              <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">On-site Directions</div>
             </div>
             <q-rating v-model="stars" :max="5" size="32px" />
           </q-card-section>
