@@ -11,9 +11,6 @@ const routes = [
         path: '/about', component: () => import('pages/About.vue') 
       },
       { 
-        path: '/service', component: () => import('pages/Service.vue') 
-      },
-      { 
         path: '/blogs', component: () => import('pages/Blog.vue') 
       },
       { 

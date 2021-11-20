@@ -99,12 +99,6 @@ body {
 ---------------HEADER STYLES----------------
 --------------------------------------------
 */
-
-.home-carousel {
-    min-height: 550px;
-    filter: brightness(0.5);
-}
-
 .header {
     color: #000000;
     font-weight: bold;
@@ -136,19 +130,7 @@ body {
 }
 
 .headers {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,8,97,1) 0%, rgba(112,8,69,1) 55%, rgba(114,8,68,1) 56%, rgba(146,8,49,1) 77%, rgba(187,8,24,1) 100%, rgba(214,8,8,1) 100%, rgba(0,212,255,1) 100%);
-    padding: 0.5em;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 0.2em;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-    border-top-style: groove;
-    border-color: aqua;
-    color: #000000;
-    font-weight: bold;
-    color: #ffffffbb;
-    text-align: center;
+    border-bottom: 2px solid #F2C037;
 }
 
 
@@ -250,23 +232,20 @@ body {
 ----------------MINISTRY CARD---------------
 --------------------------------------------
 */
-.ministry-cards {
-    margin-left: 2.188em;
-    margin-bottom: 0.625em;
-}
-
 .ministry-card {
-    background-color: #f4f4f4;
+    background-color: #F2C037;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 3.125em;
     /* margin-left: 2.188em; */
     margin-bottom: 0.625em;
-    width: 20.375em;
+    width: 100%;
     height: 29.438em;
     align-content: center;
 }
 
 .ministry-card-img {
-    width: 55%;
+    width: 45%;
+    margin-top: 10px;
     margin-left: 25%;
     margin-right: 25%;
     height: 11.25em;
@@ -290,6 +269,8 @@ body {
 
 .ministry-caption {
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .ministry-card-div {
@@ -330,6 +311,15 @@ body {
 /* Smartphones (extremely small devices) ----------- */
 @media only screen and (max-width : 320px) {
 /* Styles */
+    .mobile-slide .home-carousel {
+        min-height: 550px;
+        filter: brightness(0.5);
+    }
+
+    .desktop-slide {
+        display: none;
+    }
+
     .menu-tabs {
         display: none;
     }
@@ -346,6 +336,15 @@ body {
 /* Smartphones (small devices) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 /* Styles */
+    .mobile-slide .home-carousel {
+        min-height: 550px;
+        filter: brightness(0.5);
+    }
+
+    .desktop-slide {
+        display: none;
+    }
+
     .menu-tabs {
         display: none;
     }
@@ -361,6 +360,15 @@ body {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 /* Styles */
+    .mobile-slide .home-carousel {
+        min-height: 550px;
+        filter: brightness(0.5);
+    }
+
+    .desktop-slide {
+        display: none;
+    }
+
     .menu-tabs {
         display: none;
     }
@@ -377,6 +385,15 @@ body {
 /* Smartphones (popular mobile devices) ----------- */
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 /* Styles */
+    .mobile-slide .home-carousel {
+        min-height: 550px;
+        filter: brightness(0.5);
+    }
+
+    .desktop-slide {
+        display: none;
+    }
+
     .menu-tabs {
         display: none;
     }
@@ -392,6 +409,15 @@ body {
     
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 /* Styles */
+    .mobile-slide .home-carousel {
+        min-height: 550px;
+        filter: brightness(0.5);
+    }
+
+    .desktop-slide {
+        display: none;
+    }
+
     .menu-tabs {
         display: none;
     }
@@ -408,7 +434,15 @@ body {
 /* Smartphones (medium devices) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : landscape) {
 /* Styles */
-    
+    .mobile-slide {
+        display: none;
+    }
+
+    .desktop-slide .home-carousel {
+        min-height: 700px;
+        filter: brightness(0.5);
+    }
+
     .menu-tabs {
         display: block;
     }
@@ -424,6 +458,15 @@ body {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
 /* Styles */
+    .mobile-slide {
+        display: none;
+    }
+
+    .desktop-slide .home-carousel {
+        min-height: 700px;
+        filter: brightness(0.5);
+    }
+
     .menu-tabs {
         display: block;
     }
@@ -441,6 +484,15 @@ body {
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
 /* Styles */
+    .mobile-slide {
+        display: none;
+    }
+
+    .desktop-slide .home-carousel {
+        min-height: 700px;
+        filter: brightness(0.5);
+    }
+
     .menu-icon {
         display: none;
     }
@@ -467,6 +519,15 @@ body {
 /* Large screens ----------- */
 @media only screen  and (min-width : 1201px) {
 /* Styles */
+    .mobile-slide {
+        display: none;
+    }
+
+    .desktop-slide .home-carousel {
+        min-height: 700px;
+        filter: brightness(0.5);
+    }
+
     .menu-icon {
         display: none;
     }

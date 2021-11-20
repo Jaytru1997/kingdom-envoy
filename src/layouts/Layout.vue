@@ -11,7 +11,6 @@
             <q-tabs>
               <q-route-tab to="/" label="Home" exact />
               <q-route-tab to="/about" label="Know us" exact />
-              <q-route-tab to="/service" label="Services" exact />
               <q-route-tab to="/blogs" label="Blog" exact />
               <q-route-tab to="/gallery" label="Gallery" exact />
               <q-route-tab to="/contact" label="Prayers & Testimonies" exact />
@@ -28,7 +27,6 @@
         <div class="navpage-content">
           <router-link to="/">Home</router-link>
           <router-link to="/about">Know Us</router-link>
-          <router-link to="/service">Services</router-link>
           <router-link to="/blogs">Blog</router-link>
           <router-link to="/gallery">Gallery</router-link>
           <router-link to="/contact">Prayers & Testimonies</router-link>
