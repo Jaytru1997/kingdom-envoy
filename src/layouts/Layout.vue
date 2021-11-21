@@ -10,11 +10,11 @@
           <q-toolbar-title class="menu-tabs mobile-hide">
             <q-tabs>
               <q-route-tab to="/" label="Home" exact />
-              <q-route-tab to="/about" label="Know us" exact />
+              <!-- <q-route-tab to="/about" label="Know us" exact />
               <q-route-tab to="/blogs" label="Blog" exact />
               <q-route-tab to="/gallery" label="Gallery" exact />
               <q-route-tab to="/contact" label="Prayers & Testimonies" exact />
-              <q-route-tab to="/live" label="Live Stream" exact />
+              <q-route-tab to="/live" label="Live Stream" exact /> -->
             </q-tabs>
           </q-toolbar-title>
           <q-btn flat round dense icon="menu" class="q-mr-sm menu-icon" @click="openMenu"/>
