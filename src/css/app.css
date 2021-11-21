@@ -61,7 +61,9 @@ body {
     font-size: 20px
 }
 
-
+.menu-icon {
+    margin-left: 80%;
+}
 /*
 --------------------------------------------
 ---------------iTYPED STYLES----------------
@@ -144,89 +146,6 @@ body {
     width: 100%;
 }
 
-/* .service-card {
-    background-color: #f4f4f4;
-    border-radius: 3.125em;
-    margin-left: 2.188em;
-    margin-bottom: 0.625em;
-    width: 20.375em;
-    height: 29.75em;
-    align-content: center;
-}
-
-.service-card-img {
-    width: 100%;
-    height: 11.25em;
-    border-radius: 3.125em 3.125em 0em 0em;
-}
-
-.service-time {
-    float: right;
-    background-color: #d60808;
-    color: #ffffff;
-    padding: 0.313em 1.25em 0.313em 1.25em;
-}
-
-.dot {
-    background-color: #873b72;
-    width: 0.625em;
-    height: 0.625em;
-    border-radius: 50%;
-    margin: 0.5em 0.5em 0em 0.5625em;
-}
-
-.service-type {
-    display: inline-flex;
-    flex-direction: row;
-    margin-left: 0.313em;
-    margin-top: 0.313em;
-    font-size: 1.25em;
-    font-weight: 400;
-}
-
-.service-phrase {
-    font-size: 1.5em;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0.125em;
-}
-
-.service-host-logo {
-    border-radius: 3.125em;
-    padding: 0.625em;
-    width:  6.125em;
-    height: 4.75em;
-    margin-bottom: 0em;
-}
-
-.service-card-div {
-    width: 87%;
-    height: 0.063em;
-    background-color: #000000;
-    margin-left: 1.25em;
-    margin-right: 1.25em;
-    margin-bottom: 0.625em;
-}
-
-.service-interact {
-    width: 100%;
-    display: table;
-}
-
-.service-attend {
-    width: 2.563em;
-    height: 2.563em;
-    margin-left: 1.875em;
-}
-
-.service-inquire {
-    width: 2.563em;
-    height: 2.563em;
-    float: right;
-    margin-right: 2.5em;
-} */
-
 /*
 --------------------------------------------
 ----------------MINISTRY CARD---------------
@@ -277,7 +196,7 @@ body {
     width: 87%;
     height: 0.063em;
     background-color: #000000;
-    margin-left: 1.25em;
+    margin-left: 1.5em;
     margin-right: 1.25em;
     margin-bottom: 0.625em;
 }

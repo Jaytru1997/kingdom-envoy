@@ -7,7 +7,7 @@
             <img src="../assets/img/logo.png">
           </q-avatar>
 
-          <q-toolbar-title class="menu-tabs">
+          <q-toolbar-title class="menu-tabs mobile-hide">
             <q-tabs>
               <q-route-tab to="/" label="Home" exact />
               <q-route-tab to="/about" label="Know us" exact />

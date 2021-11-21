@@ -1,32 +1,32 @@
 <template>
     <!--Carousel-->
-    <div class="mobile-slide">
+    <!-- <div class="mobile-slide q-desktop-hide">
       <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
-        <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.png">
+        <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
           <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
-            <div class="text-subtitle1 carousel-text">The Reverend Dr. Murphy Akpovi (PhD)</div>
+            <div class="text-subtitle1 carousel-text">The Reverend Dr. Murphy Akpovi</div>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.png">
+        <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.jpg">
           <div class="absolute-center custom-caption text-center text-white carousel-text">
             <div class="text-h4 carousel-text">Associate Pastor</div>
             <div class="text-subtitle1 carousel-text">Pastor Jewel Tessy Akpovi</div>
           </div>
         </q-carousel-slide>
       </q-carousel>
-    </div>
+    </div> -->
 
     <!--Desktop Replacement For Carousel-->
-    <div class="desktop-slide">
+    <div class="desktop-slide q-mobile-hide">
       <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
-        <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.png">
+        <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
           <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
-            <div class="text-subtitle1 carousel-text">The Reverend Dr. Murphy Akpovi (PhD)</div>
+            <div class="text-subtitle1 carousel-text">The Reverend Dr. Murphy Akpovi</div>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.png">
+        <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.jpg">
           <div class="absolute-center custom-caption text-center text-white carousel-text">
             <div class="text-h4 carousel-text">Associate Pastor</div>
             <div class="text-subtitle1 carousel-text">Pastor Jewel Tessy Akpovi</div>
@@ -137,13 +137,13 @@ export default defineComponent({
           "ministry_name": "Cream Singles",
           "ministry_logo": "../assets/img/creamsingles.png",
           "ministry_page": "https://facebook.com",
-          "caption": "Cream Singles offers every youth the opportunity to experience life as a youth as God wills it."
+          "caption": "Cream Singles is the youth arm of Kingdom Envoy. It offers every youth the opportunity to experience life as a youth as God wills it."
         },
         {
           "ministry_name": "School of Ministry",
           "ministry_logo": "../assets/img/logo.png",
           "ministry_page": "https://wa.me/+2348098912544",
-          "caption": "The school of ministry is open to everyone with the desire to serve God in the capacity of a Pastor and beleive there is a purpose set out for them in the regards."
+          "caption": "The school of ministry is open to everyone with the desire to serve God in the capacity of a Pastor and beleive there is a purpose for them in the regards."
         },
       ]
     };
@@ -151,10 +151,10 @@ export default defineComponent({
   mounted () {
 
     //facebook live stream link fecthed from backend
-    const fblink = fetch('http://localhost:1337/facebook-live')
+    const fblink = fetch('https://keyadmin.onrender.com/facebook-live')
       .then(response => response.json())
       .then(data => {
-        this.fblink = data.Link;
+        this.fblink = data.link;
       })
       .catch(err => console.log(err.message));
   }
