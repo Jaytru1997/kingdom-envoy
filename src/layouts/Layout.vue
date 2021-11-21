@@ -26,11 +26,11 @@
         <div class="closebtn" @click="closeNav">&times;</div>
         <div class="navpage-content">
           <router-link to="/">Home</router-link>
-          <router-link to="/about">Know Us</router-link>
+          <!-- <router-link to="/about">Know Us</router-link>
           <router-link to="/blogs">Blog</router-link>
           <router-link to="/gallery">Gallery</router-link>
           <router-link to="/contact">Prayers & Testimonies</router-link>
-          <router-link to="/live">Live Stream</router-link>
+          <router-link to="/live">Live Stream</router-link> -->
         </div>
       </div>
 
