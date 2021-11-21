@@ -1,6 +1,6 @@
 <template>
     <!--Carousel-->
-    <!-- <div class="mobile-slide q-desktop-hide">
+    <div class="mobile-slide desktop-hide">
       <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
           <div class="absolute-center custom-caption text-center text-white">
@@ -15,22 +15,22 @@
           </div>
         </q-carousel-slide>
       </q-carousel>
-    </div> -->
+    </div>
 
     <!--Desktop Replacement For Carousel-->
-    <div class="desktop-slide q-mobile-hide">
+    <div class="desktop-slide mobile-hide">
       <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
-        <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
-          <div class="absolute-center custom-caption text-center text-white">
+        <q-carousel-slide :name="1" img-src="../assets/img/online.jpg">
+          <!-- <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
             <div class="text-subtitle1 carousel-text">The Reverend Dr. Murphy Akpovi</div>
-          </div>
+          </div> -->
         </q-carousel-slide>
-        <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.jpg">
-          <div class="absolute-center custom-caption text-center text-white carousel-text">
+        <q-carousel-slide :name="2" img-src="../assets/img/three.jpg">
+          <!-- <div class="absolute-center custom-caption text-center text-white carousel-text">
             <div class="text-h4 carousel-text">Associate Pastor</div>
             <div class="text-subtitle1 carousel-text">Pastor Jewel Tessy Akpovi</div>
-          </div>
+          </div> -->
         </q-carousel-slide>
       </q-carousel>
     </div>
