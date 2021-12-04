@@ -1,25 +1,21 @@
 <template>
     <q-layout view="hHh lpR fff" height-hint="98" class="shadow-2 rounded-borders">
       <!--Header-->
-      <q-header elevated class="container">
-        <q-toolbar class="bg-dark text-white">
-          <q-avatar>
-            <img src="../assets/img/logo.png">
-          </q-avatar>
+      <div elevated class="container">
+        <div class="bg-dark text-white menu-div">
+            <img src="../assets/img/logo.png" class="menu-logo">
 
-          <q-toolbar-title class="menu-tabs mobile-hide">
-            <q-tabs>
-              <q-route-tab to="/" label="Home" exact />
-              <!-- <q-route-tab to="/about" label="Know us" exact />
-              <q-route-tab to="/blogs" label="Blog" exact />
-              <q-route-tab to="/gallery" label="Gallery" exact />
-              <q-route-tab to="/contact" label="Prayers & Testimonies" exact />
-              <q-route-tab to="/live" label="Live Stream" exact /> -->
-            </q-tabs>
-          </q-toolbar-title>
+          <div class="menu-tab mobile-hide q-my-lg q-ml-xl">
+              <router-link to="/" class="q-mx-lg">Home</router-link>
+              <router-link to="/about" class="q-mx-lg">Know Us</router-link>
+              <router-link to="/blogs" class="q-mx-lg">Blog</router-link>
+              <router-link to="/gallery" class="q-mx-lg">Gallery</router-link>
+              <router-link to="/contact" class="q-mx-lg">Prayers & Testimonies</router-link>
+              <a href="https://live.keynigeria.org" class="q-mx-lg">Live Stream</a>
+          </div>
           <q-btn flat round dense icon="menu" class="q-mr-sm menu-icon" @click="openMenu"/>
-        </q-toolbar>
-      </q-header>
+        </div>
+      </div>
       
       <!--Navigation Bar-->
       <div class="navpage col-sm-12 col-xs-12">
@@ -29,8 +25,8 @@
           <!-- <router-link to="/about">Know Us</router-link>
           <router-link to="/blogs">Blog</router-link>
           <router-link to="/gallery">Gallery</router-link>
-          <router-link to="/contact">Prayers & Testimonies</router-link>
-          <router-link to="/live">Live Stream</router-link> -->
+          <router-link to="/contact">Prayers & Testimonies</router-link>-->
+          <a href="https://live.keynigeria.org">Live Stream</a>
         </div>
       </div>
 
@@ -98,3 +94,27 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .menu-div {
+    display: flex;
+    align-content: center;
+  }
+  .menu-logo {
+    width: 96px;
+    height: 96px; 
+  }
+  .menu-tab {
+    margin-left: 15%;
+  }
+  .menu-tab > a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+
+  .menu-tab > a:hover {
+    color: #F2C037;
+  }
+</style>

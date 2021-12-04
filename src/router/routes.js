@@ -18,10 +18,7 @@ const routes = [
       },
       { 
         path: '/contact', component: () => import('pages/Contact.vue') 
-      },
-      { 
-        path: '/live', component: () => import('pages/Live.vue') 
-      },
+      }
     ]
   },
 
