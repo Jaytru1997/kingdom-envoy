@@ -101,8 +101,8 @@ export default {
     align-content: center;
   }
   .menu-logo {
-    width: 64px;
-    height: 64px; 
+    width: 48px;
+    height: 48px; 
   }
   .menu-tab {
     margin-left: 15%;
