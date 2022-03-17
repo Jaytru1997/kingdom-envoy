@@ -64,37 +64,6 @@ body {
 .menu-icon {
     margin-left: 80%;
 }
-/*
---------------------------------------------
----------------iTYPED STYLES----------------
---------------------------------------------
-*/
-.ityped-cursor {
-    font-size: 2.2rem;
-    opacity: 1;
-    -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
-    animation: blink 0.3s infinite;
-    animation-direction: alternate;
-}
- 
-@keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
- 
-@-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
- 
-@-moz-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
 
 /*
 --------------------------------------------
@@ -157,8 +126,9 @@ body {
     border-radius: 3.125em;
     /* margin-left: 2.188em; */
     margin-bottom: 0.625em;
+    padding-top: 1em;
     width: 100%;
-    height: 29.438em;
+    height: 32.438em;
     align-content: center;
 }
 
@@ -218,12 +188,6 @@ body {
     float: right;
     margin-right: 2.5em;
 }
-
-/*
---------------------------------------------
-------------------VIEWS---------------------
---------------------------------------------
-*/
 
 .mobile-slide .home-carousel {
     min-height: 700px;

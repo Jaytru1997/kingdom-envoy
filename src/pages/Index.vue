@@ -1,7 +1,7 @@
 <template>
     <!--Carousel-->
     <div class="mobile-slide desktop-hide">
-      <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
+      <q-carousel class="home-carousel" animated v-model="slider" arrows navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
           <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
@@ -19,7 +19,7 @@
 
     <!--Desktop Replacement For Carousel-->
     <div class="desktop-slide mobile-hide">
-      <q-carousel class="home-carousel" animated v-model="slide" arrows navigation infinite>
+      <q-carousel class="home-carousel" animated v-model="slider" arrows navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/online.jpg">
           <!-- <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
@@ -34,6 +34,52 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
+
+    <!--TWSOM Advert (Dialog)-->
+    <q-dialog v-model="carousel" v-if="initOpen">
+      <q-carousel
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        swipeable
+        persistent
+        animated
+        v-model="slide"
+        control-color="primary"
+        navigation-icon="radio_button_unchecked"
+        navigation
+        height="70vh"
+        class="bg-black shadow-1 rounded-borders"
+      >
+        <q-carousel-slide :name="1" class="column no-wrap flex-center">
+          <!-- <q-icon name="style" color="primary" size="56px" /> -->
+          <q-btn label="swipe left" disable class="q-mb-md q-mt-none" color="primary" />
+          <div class="t1">
+            <img src="../assets/img/twsom-1.jpg" />
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide :name="2" class="column no-wrap flex-center">
+          <!-- <q-icon name="live_tv" color="primary" size="56px" /> -->
+          <q-btn label="swipe left" disable class="q-mb-md q-mt-none" color="primary" />
+          <div class="t2">
+            <img src="../assets/img/twsom-2.jpg" />
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide :name="3" class="column no-wrap flex-center">
+          <!-- <q-icon name="layers" color="primary" size="56px" /> -->
+          <q-btn label="swipe left" disable class="q-mb-md q-mt-none" color="primary" />
+          <div class="t3">
+            <img src="../assets/img/twsom-3.jpg" />
+          </div>
+        </q-carousel-slide>
+        <q-carousel-slide :name="4" class="column no-wrap flex-center">
+          <!-- <q-icon name="terrain" color="primary" size="56px" /> -->
+          <q-btn label="register" class="q-mb-md q-mt-none" color="primary" @click="twsomReg"/>
+          <div class="t4">
+            <img src="../assets/img/twsom-4.jpg" />
+          </div>
+        </q-carousel-slide>
+      </q-carousel>
+    </q-dialog>
 
     <!--Service Days-->
     <div class="row">
@@ -66,7 +112,7 @@
 
           <q-card-actions>
             <q-btn flat round><img src="../assets/icons/keyicon.png" width="48" height="48"></q-btn>
-            <a :href="fblink" target="_blank" class="fb"><q-btn flat color="primary">Join Live Service</q-btn></a>
+            <a :href="fblink" target="_self" class="fb"><q-btn flat color="primary">Join Live Service</q-btn></a>
           </q-card-actions>
         </q-card>
       </div>
@@ -94,12 +140,16 @@
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
+import { useQuasar } from "quasar";
 
 export default defineComponent({
   name: "PageIndex",
   data() {
     return {
+      initOpen: true,
+      carousel: true,
       slide: ref(1),
+      slider: ref(1),
       stars: 5,
       fblink: "https://live.keynigeria.org",
       map: "https://www.google.com/search?q=kingdom+envoy&rlz=1C1CHWL_enNG976NG976&oq=king&aqs=chrome.1.69i57j35i39j46i512j0i433i512l2j0i512j69i60l2.3976j0j7&sourceid=chrome&ie=UTF-8#",
@@ -140,13 +190,17 @@ export default defineComponent({
           "caption": "Cream Singles is the youth arm of Kingdom Envoy. It offers every youth the opportunity to experience life as a youth as God wills it."
         },
         {
-          "ministry_name": "School of Ministry",
+          "ministry_name": "The True Worshippers School of Ministry",
           "ministry_logo": "../assets/img/logo.png",
-          "ministry_page": "https://wa.me/+2348098912544",
-          "caption": "The school of ministry is open to everyone with the desire to serve God in the capacity of a Pastor and beleive there is a purpose for them in the regards."
+          "ministry_page": "https://flutterwave.com/pay/twsom",
+          "caption": "The True Worshipper's School of Ministry is a training program anchored by The Murphy Akpovi Ministries to equip the Saints with spiritual knowledge to the full stature of Christ."
         },
       ]
     };
+  },
+  created () {
+    const $q = useQuasar();
+    // this.$q.localStorage.set()
   },
   mounted () {
 
@@ -157,6 +211,11 @@ export default defineComponent({
     //     this.fblink = data.link;
     //   })
     //   .catch(err => console.log(err.message));
+  },
+  methods: {
+    twsomReg () {
+      window.open('https://flutterwave.com/pay/twsom', '_blank')
+    }
   }
 });
 </script>
@@ -164,5 +223,25 @@ export default defineComponent({
 <style>
 a {
   text-decoration: none;
+}
+.t1 img {
+  /* display: none; */
+  width: 100%;
+  /* height: 100vh; */
+}
+.t2 img {
+  /* display: none; */
+  width: 100%;
+  /* height: 100vh; */
+}
+.t3 img {
+  /* display: none; */
+  width: 100%;
+  /* height: 100vh; */
+}
+.t4 img {
+  /* display: none; */
+  width: 100%;
+  /* height: 100vh; */
 }
 </style>
