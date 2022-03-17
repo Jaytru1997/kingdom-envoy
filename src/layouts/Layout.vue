@@ -7,10 +7,10 @@
 
           <div class="menu-tab mobile-hide q-my-lg q-ml-xl text-center">
               <router-link to="/" class="q-mx-lg">Home</router-link>
-              <router-link to="/about" class="q-mx-lg">Know Us</router-link>
+              <!-- <router-link to="/about" class="q-mx-lg">Know Us</router-link>
               <router-link to="/blogs" class="q-mx-lg">Blog</router-link>
               <router-link to="/gallery" class="q-mx-lg">Gallery</router-link>
-              <router-link to="/contact" class="q-mx-lg">Prayers & Testimonies</router-link>
+              <router-link to="/contact" class="q-mx-lg">Prayers & Testimonies</router-link> -->
               <a href="https://live.keynigeria.org" class="q-mx-lg">Live Stream</a>
           </div>
           <q-btn flat round dense icon="menu" class="q-mr-sm menu-icon" @click="openMenu"/>
@@ -22,10 +22,10 @@
         <div class="closebtn" @click="closeNav">&times;</div>
         <div class="navpage-content">
           <router-link to="/">Home</router-link>
-          <router-link to="/about">Know Us</router-link>
+          <!-- <router-link to="/about">Know Us</router-link>
           <router-link to="/blogs">Blog</router-link>
           <router-link to="/gallery">Gallery</router-link>
-          <router-link to="/contact">Prayers & Testimonies</router-link>
+          <router-link to="/contact">Prayers & Testimonies</router-link> -->
           <a href="https://live.keynigeria.org">Live Stream</a>
         </div>
       </div>
