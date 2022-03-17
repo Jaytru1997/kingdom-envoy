@@ -194,7 +194,7 @@ body {
 }
 
 .desktop-slide .home-carousel {
-    min-height: 700px;
+    min-height: 100vh;
 }
 /*
 --------------------------------------------
@@ -333,7 +333,7 @@ body {
     }
 
     .desktop-slide .home-carousel {
-        min-height: 700px;
+        min-height: 100vh;
         filter: brightness(0.5);
     }
 
@@ -357,7 +357,7 @@ body {
     }
 
     .desktop-slide .home-carousel {
-        min-height: 700px;
+        min-height: 100vh;
         filter: brightness(0.5);
     }
 
@@ -383,7 +383,7 @@ body {
     }
 
     .desktop-slide .home-carousel {
-        min-height: 700px;
+        min-height: 100vh;
         filter: brightness(0.5);
     }
 
@@ -418,7 +418,7 @@ body {
     }
 
     .desktop-slide .home-carousel {
-        min-height: 700px;
+        min-height: 100vh;
         filter: brightness(0.5);
     }
 

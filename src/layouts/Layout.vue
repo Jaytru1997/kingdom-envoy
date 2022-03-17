@@ -2,10 +2,10 @@
     <q-layout view="hHh lpR fff" height-hint="98" class="shadow-2 rounded-borders">
       <!--Header-->
       <div elevated class="container">
-        <div class="bg-dark text-white menu-div">
+        <div class="bg-dark text-white menu-div q-py-lg">
             <img src="../assets/img/logo.png" class="menu-logo">
 
-          <div class="menu-tab mobile-hide q-my-lg q-ml-xl">
+          <div class="menu-tab mobile-hide q-my-lg q-ml-xl text-center">
               <router-link to="/" class="q-mx-lg">Home</router-link>
               <router-link to="/about" class="q-mx-lg">Know Us</router-link>
               <router-link to="/blogs" class="q-mx-lg">Blog</router-link>

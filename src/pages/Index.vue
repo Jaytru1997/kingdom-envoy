@@ -1,7 +1,7 @@
 <template>
     <!--Carousel-->
     <div class="mobile-slide desktop-hide">
-      <q-carousel class="home-carousel" animated v-model="slider" arrows navigation infinite>
+      <q-carousel class="home-carousel" animated v-model="slider" swipeable navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/IMG_6279.jpg">
           <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
@@ -19,7 +19,7 @@
 
     <!--Desktop Replacement For Carousel-->
     <div class="desktop-slide mobile-hide">
-      <q-carousel class="home-carousel" animated v-model="slider" arrows navigation infinite>
+      <q-carousel class="home-carousel" animated v-model="slider" swipeable navigation infinite>
         <q-carousel-slide :name="1" img-src="../assets/img/online.jpg">
           <!-- <div class="absolute-center custom-caption text-center text-white">
             <div class="text-h4 carousel-text">Lead Pastor</div>
