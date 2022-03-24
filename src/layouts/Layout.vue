@@ -1,5 +1,5 @@
 <template>
-    <q-layout view="hHh lpR fff" height-hint="98" class="shadow-2 rounded-borders">
+    <q-layout view="hHh lpR fff" height-hint="98" class="shadow-2 rounded-borders entire-body">
       <!--Header-->
       <div elevated class="container">
         <div class="bg-dark text-white menu-div q-py-lg">
