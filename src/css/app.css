@@ -197,6 +197,20 @@ body {
 .desktop-slide .home-carousel {
     min-height: 100vh;
 }
+
+.give {
+    z-index: 100;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+  }
+
+.buy_msg {
+z-index: 100;
+top: 50%;
+width: 48px;
+height: 48px;
+}
 /*
 --------------------------------------------
 ------------------VIEWS---------------------
@@ -418,6 +432,22 @@ body {
         margin-left: 18%;
         margin-right: 15%;
     }
+
+    .give {
+        z-index: 100;
+        top: 50%;
+        left: 80px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .buy_msg {
+        z-index: 100;
+        top: 50%;
+        right: 80px;
+        width: 48px;
+        height: 48px;
+    }
 }
 
 /* Large screens ----------- */
@@ -461,5 +491,21 @@ body {
     .ministry-cards {
         margin-left: 18%;
         margin-right: 15%;
+    }
+
+    .give {
+        z-index: 100;
+        top: 50%;
+        left: 80px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .buy_msg {
+        z-index: 100;
+        top: 50%;
+        right: 80px;
+        width: 48px;
+        height: 48px;
     }
 }
