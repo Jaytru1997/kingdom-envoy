@@ -71,7 +71,7 @@
       class="bg-black shadow-1 rounded-borders"
     >
       <q-carousel-slide :name="1" class="column no-wrap flex-center">
-        <!-- <q-icon name="style" color="primary" size="56px" /> -->
+        <q-icon name="style" color="primary" size="56px" />
         <q-btn
           label="swipe left"
           disable
@@ -83,7 +83,7 @@
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="column no-wrap flex-center">
-        <!-- <q-icon name="live_tv" color="primary" size="56px" /> -->
+        <q-icon name="live_tv" color="primary" size="56px" />
         <q-btn
           label="swipe left"
           disable
@@ -95,7 +95,7 @@
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="3" class="column no-wrap flex-center">
-        <!-- <q-icon name="layers" color="primary" size="56px" /> -->
+        <q-icon name="layers" color="primary" size="56px" />
         <q-btn
           label="swipe left"
           disable
@@ -107,7 +107,7 @@
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="column no-wrap flex-center">
-        <!-- <q-icon name="terrain" color="primary" size="56px" /> -->
+        <q-icon name="terrain" color="primary" size="56px" />
         <q-btn
           label="register"
           class="q-mb-md q-mt-none"
@@ -225,7 +225,7 @@ export default defineComponent({
   name: "PageIndex",
   data() {
     return {
-      initOpen: true,
+      // initOpen: true,
       carousel: true,
       slide: ref(1),
       slider: ref(1),
