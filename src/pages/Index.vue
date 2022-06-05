@@ -17,7 +17,7 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.jpg">
+      <!-- <q-carousel-slide :name="2" img-src="../assets/img/IMG_6315.jpg">
         <div
           class="absolute-center custom-caption text-center text-white carousel-text"
         >
@@ -26,7 +26,7 @@
             Pastor Jewel Tessy Akpovi
           </div>
         </div>
-      </q-carousel-slide>
+      </q-carousel-slide> -->
     </q-carousel>
   </div>
 

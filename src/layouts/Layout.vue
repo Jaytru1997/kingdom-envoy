@@ -45,51 +45,35 @@
 
     <q-page-container>
       <q-page>
-        <q-btn
-          round
-          color="warning"
-          class="give fixed-left"
-          icon="credit_card"
-          push
-          elevated
-          @click="giveInit"
-        />
-        <!-- <q-dialog v-if="give">
-          <q-card>
-            <q-card-section>
-              <div class="text-h6">Giving Section</div>
-            </q-card-section>
-
-            <q-separator />
-
-            <q-card-section style="max-height: 50vh" class="scroll">
-              <p v-for="n in 15" :key="n">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                repellendus sit voluptate voluptas eveniet porro. Rerum
-                blanditiis perferendis totam, ea at omnis vel numquam
-                exercitationem aut, natus minima, porro labore.
-              </p>
-            </q-card-section>
-
-            <q-separator />
-
-            <q-card-actions align="right">
-              <q-btn flat label="Close" color="primary" v-close-popup />
-            </q-card-actions>
-          </q-card>
-        </q-dialog> -->
         <router-view />
-        <q-btn
-          round
-          color="warning"
-          class="buy_msg fixed-right"
-          icon="shopping_cart"
-          push
-          elevated
-          @click="buyInit"
-        />
       </q-page>
     </q-page-container>
+
+    <!--Floating Action Button-->
+    <q-fab
+      v-model="fabRight"
+      vertical-actions-align="right"
+      color="warning"
+      glossy
+      icon="keyboard_arrow_up"
+      direction="up"
+      class="fixed-right float-action"
+    >
+      <q-fab-action
+        label-position="left"
+        color="primary"
+        @click="buyInit"
+        icon="shopping_cart"
+        label="Messages"
+      />
+      <q-fab-action
+        label-position="left"
+        color="secondary"
+        @click="giveInit"
+        icon="credit_card"
+        label="Give"
+      />
+    </q-fab>
 
     <!--Footer-->
     <div class="bg-dark q-py-lg text-white">
@@ -159,6 +143,7 @@ export default {
         "The Spirit Center, Jesus Street, Off Street Opp. Sokaje Hotel, Ekredjebor, Ughelli, Delta State, Nigeria, 333105",
       give: false,
       buy: false,
+      fabRight: false,
     };
   },
   created() {
@@ -174,11 +159,11 @@ export default {
       menu.style.height = "0%";
     },
     giveInit() {
-      console.log("clicked")
+      console.log("clicked");
       this.give = true;
     },
     buyInit() {
-      console.log("clicked")
+      console.log("clicked");
       this.buy = true;
     },
   },
