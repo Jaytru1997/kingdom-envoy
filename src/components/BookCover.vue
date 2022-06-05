@@ -26,7 +26,7 @@ export default defineComponent({
   props: {
     link: {
       type: String,
-      default: "https://keynigeria.org",
+      default: "https://keynigeria.org/messages/",
     },
     alttext: {
       type: String,
